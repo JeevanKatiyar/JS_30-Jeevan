@@ -64,3 +64,22 @@ console.log(DOB); //output :1998
 
 // DOB = 1999;
 //console.log(DOB); //TypeError: Assignment to constant variable.
+
+// number , string,  boolean, object , array ,
+
+// Feature Request:
+let varNum = 108;
+let varName = "student";
+let varPresent = true;
+let varobject = {
+  name: "jeevan",
+  age: 26,
+  place: "hyderabad",
+};
+
+let varArray = ["shiv", "akanksha", "ma", "papa"];
+console.log(typeof varNum);
+console.log(typeof varName);
+console.log(typeof varPresent);
+console.log(typeof varobject);
+console.log(typeof varArray);
