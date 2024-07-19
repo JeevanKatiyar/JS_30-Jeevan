@@ -40,6 +40,12 @@ const library = {
       title: "To Kill a Mockingbird",
       author: "Harper Lee",
       year: 1960,
+      getDetails: function () {
+        //Activity 4: This keyword
+
+        //task 7:
+        return `${this.title} (${this.year})`;
+      },
     },
     {
       title: "1984",
@@ -54,9 +60,54 @@ const library = {
   ],
 };
 
+//task 6:
 // Log the entire library object to the console
 console.log(library.name);
 console.log();
 library.books.forEach((books) => {
   console.log(books.title);
+});
+
+//Activity 5:
+
+//task 8:
+
+const book2 = {
+  title: "To Kill a Mockingbird",
+  author: "Harper Lee",
+  year: 1960,
+  getDetails: function () {
+    return `${this.title} (${this.year})`;
+  },
+};
+
+// Use for...in loop to iterate over properties of the book object
+for (let property in book2) {
+  if (book2.hasOwnProperty(property)) {
+    // Check if the property is directly on the object
+    console.log(`${property}: ${book2[property]}`);
+  }
+}
+
+// Task 9:
+
+const book3 = {
+  title: "To Kill a Mockingbird",
+  author: "Harper Lee",
+  year: 1960,
+  getDetails: function () {
+    return `${this.title} (${this.year})`;
+  },
+};
+
+// Log all keys of the book object
+console.log("Keys:");
+Object.keys(book3).forEach((key) => {
+  console.log(key);
+});
+
+// Log all values of the book object
+console.log("Values:");
+Object.values(book3).forEach((value) => {
+  console.log(value);
 });
